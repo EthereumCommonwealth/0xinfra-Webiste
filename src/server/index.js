@@ -95,5 +95,5 @@ app.use((req, res, next) => {
 
 app.listen(port, (err) => {
   if (err) throw err
-  console.log(`0xInfra running on por: ${port} 🚀`)
+  console.log(`0xInfra running on por: ${port} 🔭`)
 })
