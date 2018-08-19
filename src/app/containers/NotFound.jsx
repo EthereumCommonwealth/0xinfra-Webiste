@@ -1,7 +1,9 @@
 import React from 'react';
+import Header from '../components/commons/Header';
 
 const NotFound = ({ match }) => (
   <div>
+    <Header />
     <div className='container'>
       <div className='NotFound'>
         <h1>404</h1>
