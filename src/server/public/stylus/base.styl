@@ -1,0 +1,32 @@
+body
+  font-family $secondary-font
+  background-color $white
+  font-size 1em
+
+figure
+  margin 0
+
+p
+  margin 0
+
+.container
+  max-width 1024px
+  margin 0 auto
+  padding 0 1em
+  +from-width($xs)
+    max-width 540px
+  +from-width($sm)
+    max-width 720px
+  +from-width($md)
+    max-width 960px
+  +from-width($xl)
+    max-width 1140px
+
+.no-padding
+  padding 0
+
+.no-margin
+  margin 0
+
+a
+  color $green
