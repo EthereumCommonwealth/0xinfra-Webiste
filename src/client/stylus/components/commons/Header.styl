@@ -1,0 +1,36 @@
+.Header
+  background-color #FFF
+  padding .5em 0
+  box-shadow 0 0 10px 0 rgba(198, 202, 206, 0.2)
+  &-content
+    display flex
+    justify-content space-between
+    align-items center
+    padding 0
+  &-figure
+    width 160px
+    img
+      width 100%
+  &-menu
+    &-content
+      list-style none
+      padding 0
+      margin 0
+      display none
+      +from-width($md)
+        display flex
+        align-items center
+      &-target
+        line-height 1.05
+        color $dark-gray
+        text-decoration none
+        transition all 250ms ease
+        user-select none
+        padding 1em 5px
+        font-size 15px
+        +from-width($md)
+          padding 1em 13px
+        &:hover
+          color $dark-blue
+          cursor pointer
+          border-bottom solid 2px $green
