@@ -19,7 +19,22 @@
       font-size 18px
   &-content
     display grid
-    grid-template-columns 1.5fr 1fr
+    +from-width($md)
+      grid-template-columns 1.5fr 1fr
     grid-gap 2em
     &-right
       justify-self center
+      display grid
+      grid-gap 2em
+  &-feature
+    color $dark-blue
+    &-number
+      line-height 0.94
+      font-weight 500
+      font-size 80px
+      font-family $primary-font
+      &-white
+        color #FFF
+    &-description
+      line-height 1.41
+      margin-left 3em

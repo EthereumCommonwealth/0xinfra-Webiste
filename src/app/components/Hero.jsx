@@ -19,7 +19,27 @@ const Hero = () => (
         </a>
       </div>
       <div className='Hero-content-right'>
-        Stats here
+        <div className='Hero-feature'>
+          <strong className='Hero-feature-number'>
+            <span className='Hero-feature-number-white'>+</span>
+            50
+          </strong>
+          <p className='Hero-feature-description'>millions requests per day</p>
+        </div>
+        <div className='Hero-feature'>
+          <strong className='Hero-feature-number'>
+            <span className='Hero-feature-number-white'>+</span>
+            15 000
+          </strong>
+          <p className='Hero-feature-description'>unique users per day </p>
+        </div>
+        <div className='Hero-feature'>
+          <strong className='Hero-feature-number'>
+            <span className='Hero-feature-number-white'>~</span>
+            1 000
+          </strong>
+          <p className='Hero-feature-description'>transactions processed in CLO and ETC</p>
+        </div>
       </div>
     </div>
   </section>
