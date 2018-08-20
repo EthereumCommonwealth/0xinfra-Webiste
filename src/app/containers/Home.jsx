@@ -4,6 +4,9 @@ import Layout from '../components/commons/Layout';
 import Header from '../components/commons/Header';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
+import WhoIsUsing from '../components/WhoIsUsing';
+import AboutUs from '../components/AboutUs';
+import Team from '../components/Team';
 
 const Home = ({ match }) => {
   return (
@@ -11,6 +14,9 @@ const Home = ({ match }) => {
       <Header />
       <Hero />
       <Features />
+      <WhoIsUsing />
+      <AboutUs />
+      <Team />
     </Layout>
   );
 }

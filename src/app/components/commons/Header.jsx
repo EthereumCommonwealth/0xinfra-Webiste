@@ -7,7 +7,7 @@ class Header extends PureComponent {
     return [
       {
         title: 'About Us',
-        url: 'roadmap',
+        url: 'about',
       },
       {
         title: 'RPC nodes',

@@ -1,0 +1,33 @@
+.AboutUs
+  background-color #c0f5df
+  padding 35px 0
+  position relative
+  +from-width($sm)
+    padding 100px 0
+  &-bottom
+    display grid
+    margin 1em
+    +from-width($sm)
+      margin 2em
+      grid-template-columns 1fr 1fr
+    +from-width($md)
+      margin 3em
+    &-left
+      display none
+      +from-width($sm)
+        display block
+        position relative
+    &-figure
+      position absolute
+      +from-width($sm)
+        width 100%
+        top -3em
+      +from-width($md)
+        top -6em
+      +from-width($xl)
+        top -8em
+      img
+        width 100%
+  &-description
+    line-height 1.52
+    color $dark-blue
