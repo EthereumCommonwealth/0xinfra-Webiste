@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import helmet from 'helmet';
 import favicon from 'express-favicon';
 import R from 'ramda';
+import getManifest from './getManifest';
 import prefetchData from './utils/prefetchData';
 
 const Env = (envVars) => {
@@ -59,8 +60,17 @@ if (ENV.isDevelopment()) {
   }
   app.use(webpackDevMiddleware(compiler, serverConfig));
   app.use(webpackHotMiddleware(compiler));
+  app.use((req, res, next) => {
+    req.hashManifest = ['/main.js', '/main.css', '/vendor.js'];
+    next();
+  });
 } else {
   console.log('Loading server configs')
+  const manifest = getManifest();
+  app.use((req, res, next) => {
+    req.hashManifest = manifest.length > 0 ? manifest : ['/main.js', '/main.css', '/vendor.js'];
+    next();
+  });
   app.use(helmet());
   app.disable('x-powered-by');
 }

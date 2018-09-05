@@ -69,13 +69,8 @@ typings/
 .DS_Store
 
 src/server/public/stylus
-src/server/public/main.css
-src/server/public/main.css.map
-src/server/public/main.css.gz
-src/server/public/main.js
-src/server/public/main.js.map
-src/server/public/main.js.gz
-src/server/public/vendor.js
-src/server/public/vendor.js.map
-src/server/public/vendor.js.gz
+src/server/public/main.*
+src/server/public/main.*
+src/server/public/vendor.*
 src/server/public/image
+manifest.json
