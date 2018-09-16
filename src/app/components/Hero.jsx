@@ -14,7 +14,7 @@ const Hero = () => (
             decentralized applications so you can focus on the features.
           `}
         </p>
-        <a href='/' className='btn btn-blue'>
+        <a href='https://callisto.network' target='_blank' className='btn btn-blue'>
           Get Started
         </a>
       </div>
