@@ -2,6 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader';
 import Layout from '../components/commons/Layout';
 import Header from '../components/commons/Header';
+import Footer from '../components/commons/Footer';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 import WhoIsUsing from '../components/WhoIsUsing';
@@ -17,6 +18,7 @@ const Home = ({ match }) => {
       <WhoIsUsing />
       <AboutUs />
       <Team />
+      <Footer />
     </Layout>
   );
 }

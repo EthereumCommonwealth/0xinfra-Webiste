@@ -34,12 +34,12 @@ const Features = () => (
           description='Compatible with the standard JSON-RPC API and popular web3 libraries'
         />
         <SingleFeature
-          image='/image/features/tls-gateway.svg'
+          image='/image/features/multi-content.svg'
           title='Multi-client Backend'
           description='Both Geth and Parity for robustness and resiliency'
         />
         <SingleFeature
-          image='/image/features/tls-gateway.svg'
+          image='/image/features/custom-instalations.svg'
           title='Custom installations'
           description='Private infrastructure deployments for your organization'
         />

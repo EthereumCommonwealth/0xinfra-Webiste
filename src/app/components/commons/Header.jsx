@@ -10,16 +10,8 @@ class Header extends PureComponent {
         url: 'about',
       },
       {
-        title: 'RPC nodes',
-        url: 'nodes',
-      },
-      {
         title: 'Features',
         url: 'features',
-      },
-      {
-        title: 'Support',
-        url: 'support',
       },
     ];
   }
